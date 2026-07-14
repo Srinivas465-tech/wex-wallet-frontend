@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+}
+
+.header {
+  background-color: white;
+  padding: 12px 24px;
+  font: 1em sans-serif;
+  border-bottom: 1px solid #ccc;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: #2c2c2c;
+}
+
+.header-icon {
+  width: 28px;
+  height: 28px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.header-logo {
+  display: inline-flex;
+  align-items: center;
+}
+
+.header-balance {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #3a3a2a;
+  padding: 6px 16px;
+  background: #f0f0ea;
+  border-radius: 10px;
+}
