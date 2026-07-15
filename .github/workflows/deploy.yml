@@ -57,6 +57,6 @@ jobs:
     steps:
       - name: Roll out new image
         run: |
-          IMAGE=ghcr.io/${{ github.repository }}:sha-${GITHUB_SHA::7}
+          IMAGE=ghcr.io/${GITHUB_REPOSITORY,,}:sha-${GITHUB_SHA::7}
           kubectl set image deployment/frontend frontend=$IMAGE
           kubectl rollout status deployment/frontend --timeout=120s
